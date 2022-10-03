@@ -26,7 +26,7 @@ dt = 10^-4; % timestep
 
 while t<simTime
 
-x_0 = A+B*t
+x_0 = A+B*t;
 
 delta = x_0 - x - L_0;
 

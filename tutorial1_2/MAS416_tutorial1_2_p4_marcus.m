@@ -27,7 +27,7 @@ while t < simTime
     delta = y;
     deltaDot = yDot;
 
-    F = F_0_a*sin(omega_p_a*t);
+    F = F_0_bcd*sin(omega_p_d*t);
     Fk = k*delta;
     Fc = c*deltaDot;
     

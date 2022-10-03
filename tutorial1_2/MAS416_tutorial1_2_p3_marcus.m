@@ -8,7 +8,7 @@ g = 9.81; % gravity
 phi = pi/4; % rad
 phiDot = 2; % rad/s
 
-simTime = 80; % s
+simTime = 8; % s
 
 idx = 1;
 dt = 10^-3;
@@ -32,11 +32,5 @@ end
 
 toc
 
-subplot(3,1,1)
 plot(timePlot, rad2deg(phiPlot))
 grid on
-hold on
-subplot(3,1,2)
-plot(timePlot, rad2deg(phiDotPlot))
-subplot(3,1,3)
-plot(timePlot, phiDotDotPlot)

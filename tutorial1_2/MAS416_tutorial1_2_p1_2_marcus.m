@@ -1,6 +1,6 @@
 clc; close all; clear all;
 
-% Tutorial 1, problem 1a)
+%% Tutorial 1, problem 1a)
 dt = 10^-5;
 
 A = [1 2 3];
@@ -50,7 +50,7 @@ grid on
 maxMag = max(yPlot)
 RMSval = rms(yPlot)
 
-% Tutorial 1, problem 1b)
+%% Tutorial 1, problem 1b)
 clear all;
 
 dt = 10^-5;
@@ -79,8 +79,8 @@ end
 plot(timePlot, yPlot, 'LineWidth', 2)
 grid on
 
-% Tutorial 1, problem 2a)
-clear all; close all;
+%% Tutorial 1, problem 2a)
+clear all;
 
 interval = [0 1];
 
@@ -105,8 +105,8 @@ end
 
 plot(timePlot, yPlot, 'LineWidth', 2)
 
-% Tutorial 1, problem 2b)
-clear all; close all;
+%% Tutorial 1, problem 2b)
+clear all;
 y = 0;
 yDot = 0;
 
@@ -132,7 +132,7 @@ end
 plot(timePlot, yPlot)
 grid on
 hold on
-plot(timePlot, yDotPlot)
+%plot(timePlot, yDotPlot)
 
 maxMag_y = max(yPlot)
 maxMag_yDot = max(yDotPlot)
