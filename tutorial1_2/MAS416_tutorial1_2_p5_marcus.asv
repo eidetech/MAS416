@@ -28,7 +28,7 @@ for i = 1:length(M_0)
         T_b1 = b_theta * thetaDot;
         thetaDotDot = 1/J *(M - T_k - T_b1);
     
-        % Logging (putting each for index into separate columns)
+        % Logging
         timePlot(idx,i) = t;
         theta_plot(idx,i) = theta;
         thetaDot_plot(idx,i) = thetaDot;
@@ -42,34 +42,25 @@ for i = 1:length(M_0)
         idx = idx + 1;
     
     end
-    % Reset initial condition
     t = 0;
     idx = 1;
-    theta = deg2rad(25); % rad
-    thetaDot = deg2rad(0); % rad/s
-    thetaDotDot = 0;
+    theta =
+
+    
 end
 
-subplot(2,2,1)
-plot(timePlot(:,1), rad2deg(theta_plot(:,1)), 'b')
-legend("$\theta$ [deg]", 'Interpreter', 'latex')
-title("Situation a")
+figure
+plot(timePlot(:,1), rad2deg(theta_plot(:,1)))
 grid
 
-subplot(2,2,2)
-plot(timePlot(:,2), rad2deg(theta_plot(:,2)), 'r')
-legend("$\theta$ [deg]", 'Interpreter', 'latex')
-title("Situation b")
+figure
+plot(timePlot(:,2), rad2deg(theta_plot(:,2)))
 grid
 
-subplot(2,2,3)
-plot(timePlot(:,3), rad2deg(theta_plot(:,3)), 'k')
-legend("$\theta$ [deg]", 'Interpreter', 'latex')
-title("Situation c")
+figure
+plot(timePlot(:,3), rad2deg(theta_plot(:,3)))
 grid
 
-subplot(2,2,4)
-plot(timePlot(:,4), rad2deg(theta_plot(:,4)), 'm')
-legend("$\theta$ [deg]", 'Interpreter', 'latex')
-title("Situation d")
+figure
+plot(timePlot(:,4), rad2deg(theta_plot(:,4)))
 grid

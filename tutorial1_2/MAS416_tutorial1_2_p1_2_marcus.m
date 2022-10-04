@@ -104,7 +104,7 @@ idx=idx+1;
 end
 
 plot(timePlot, yPlot, 'LineWidth', 2)
-
+grid
 %% Tutorial 1, problem 2b)
 clear all;
 y = 0;

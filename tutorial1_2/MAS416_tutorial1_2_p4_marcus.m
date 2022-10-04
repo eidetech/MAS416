@@ -45,8 +45,10 @@ while t < simTime
 end
 
 plot(timePlot, yPlot)
+grid
 
 yMax = max(yPlot)
 yDotMax = max(yDotPlot)
 yRMS = rms(yPlot)
 yDotRMS = rms(yDotPlot)
+
