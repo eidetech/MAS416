@@ -35,8 +35,8 @@ while(t <= simTime)
     Gy1 = m_1*g;
     Gy2 = m_2*g;
 
-    x_1DotDot = (Fk1 + Fb1 - Fk2 - Fb2 - Gy1)/m_1;
-    x_2DotDot = (Fk3 + Fb3 - Fk2 - Fb2 - Gy2)/m_2;
+    x_1DotDot = (Fk1 + Fb1 + Fk2 + Fb2 - Gy1)/m_1;
+    x_2DotDot = (-Fk3 - Fb3 + Fk2 + Fb2 - Gy2)/m_2;
 
     % Logging
     time_plot(idx) = t;
